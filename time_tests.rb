@@ -40,7 +40,8 @@ while counter < iterations
   counter += 1
 end
 
-puts "Checando se os arrays realmente mudaram de valor\n"
+puts "Checando se os arrays realmente mudaram de valor.\n"
+puts "Últimos quatro valores dos arrays após sair das iterações\n"
 print my[-4..-1]
 puts "\n"
 print my_3[-4..-1]
@@ -59,8 +60,9 @@ puts "\n"
 puts test_1
 puts "\n"
 puts "time in ms - miliseconds"
+puts "\n"
 puts "Test #1a\nMethod: .map!\n-average_time: #{avg_map}\n-max: #{time_map.max}\n-min: #{time_map.min}"
 puts "\n"
 puts "Test #1b\nMethod: mesma operação usando loop for\n-average_time: #{avg_for}\n-max: #{time_for.max}\n-min: #{time_for.min}"
 puts "\n"
-puts "Conclusão para este caso: Método map! leva em média #{(100 * (avg_map / avg_for)).round(2)}\% do tempo que o for levou"
+puts "Conclusão:\nMétodo map! levou #{(100 * (avg_map / avg_for)).round(2)}\% do tempo que o 'for' levou"
